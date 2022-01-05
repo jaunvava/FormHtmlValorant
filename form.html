@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="lindu.css" media="screen">
+
+        <title>Cadastro</title>
+    </head>
+    
+    <body>  
+
+        <div>
+            <h1 id="titulo">Cadastro de Pro-Player</h1>
+            <p id="subtitulo">Complete suas informações para entrar no #TSD VALORANT</p>
+            <br>
+        </div>
+
+        
+        <form>
+
+            <fieldset class="grupo">
+    
+                <div class="campo">
+                    <label for="nome"><strong>Nome;</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome;</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <div class="campo">
+                <label for="email"><strong>Email;</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Qual classe de agente você joga?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="Iniciadores" checked>Iniciadores
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Controladores">Controladores
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Sentinelas">Sentinelas
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Duelistas">Duelistas
+                </label>
+
+            </div>
+
+            <div class="campo">
+                <label for="Nivel de Habilidade"><strong>Nivel de Habilidade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Iniciante</option>
+                  <option>Intermediario</option>
+                  <option>Profissional</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Bulldog Operator Phantom Vandal Spectre ghost sheriff -->
+                <div class="campo4">
+                    <label>Selecione as armas que você mais usa:</label><br><br>
+                    <input type="checkbox" class="armas1" name="armas1" value="Operator">
+                    <label for="armas1">Operator</label>
+                    <input type="checkbox" class="armas2" name="armas2" value="Bulldog">
+                    <label for="armas2">Bulldog</label>
+                    <input type="checkbox" class="armas3" name="armas3" value="Phantom">
+                    <label for="armas3">Phantom</label>
+                    <input type="checkbox" class="armas4" name="armas4" value="Vandal">
+                    <label for="armas4">Vandal</label>
+                    <input type="checkbox" class="armas5" name="armas5" value="Spectre">
+                    <label for="armas5">Spectre</label>
+                    <input type="checkbox" class="armas6" name="armas6" value="ghost">
+                    <label for="armas6">ghost</label>
+                    <input type="checkbox" class="armas7" name="armas7" value="sheriff">
+                    <label for="armas7">sheriff</label>
+                </div>
+            </fieldset>
+
+    
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong><i>Conte um pouco mais da sua experiência: </i></strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+        
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
